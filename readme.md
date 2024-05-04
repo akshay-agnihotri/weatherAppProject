@@ -22,7 +22,10 @@ This Weather App project is a simple web application designed to provide users w
 3. Grant location access or enter a city name to view the weather information.
 
 ## Screenshots
-[Add screenshots or GIFs of your application here]
+![Homepage Screenshot](assets/homePage.jpg)
+![Homepage Screenshot 2](assets/homePage1.jpg)
+![Second Page Screenshot](assets/secondPage.jpg)
+![Second Page Screenshot 2](assets/secondPage1.jpg)
 
 ## Credit
 - Love Babbar Bhaiya
