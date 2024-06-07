@@ -129,9 +129,13 @@ h1{
 /* <!-- show weather info --> */
 .user-info-container{
     display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.user-info-container.active{
+    display: flex;
 }
 /* <!-- city name and Flag --> */
 .name{
@@ -203,6 +207,9 @@ p[data-temp]{
     align-items: center;
     flex-direction: column;
     display: none;  /**/
+}
+.loading-container.active{
+    display: flex;
 }
 .loading-container p{
     color: white;
