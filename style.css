@@ -42,11 +42,14 @@ h1{
     justify-content: space-between;
     padding: 0 70px;
 }
-.tab-container p{
+.tab-container button{
     color: var(--colorLight2);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 /* the tab which contains the active class will be considered as active */
 .tab.active{
@@ -54,6 +57,7 @@ h1{
 }
 
 /*  <!-- search form -> form-container--> */
+/* the container(form-container or  grant-location container) which contains the active class will be considered as active */
 /* form-container */
 .form-container{
     width: 100%;
@@ -71,6 +75,7 @@ h1{
     background-color: var(--bgcolor);
     border: none;
     border-radius: 8px;
+    color: white;
 }
 .form-container input:focus{
     outline: 3px solid var(--colorLight1) ;
@@ -87,9 +92,13 @@ h1{
 .btn:focus{
     outline: none;
 }
+.form-container.active{
+    display: flex;
+}
 /* grant-location container */
 .grant-location-container{
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -113,7 +122,9 @@ h1{
     text-transform: uppercase;
     margin-top: 15px;
 }
-
+.grant-location-container.active{
+    display: flex;
+}
 /* -----------user-info-container------------- */
 /* <!-- show weather info --> */
 .user-info-container{
